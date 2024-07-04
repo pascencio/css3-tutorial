@@ -28,27 +28,39 @@ const example3 = `.container {
     color: black;
     overflow: auto; /*Mostrar barras de desplazamiento de forma automátic (mejor alternativa que scroll)*/
 }`
+const example4 = `.container {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    font-size: 30px;
+    border: 1px solid white;
+    color: black;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}`
 </script>
 <template>
-    <div>
-        <h1>Desbordamiento</h1>
-        <Codeblock :code="example1" />
-        <section class="example1 container">
-            CCS IS AWESOME
-        </section>
-        <Note title="Nota">
-            El valor por defecto de la propiedad <code>overflow</code> es <code>visible</code>.
-            Si el contenido es más grande que el contenedor, se mostrará fuera de él.
-        </Note>
-        <Codeblock :code="example2" />
-        <section class="example2 container">
-            CCS IS AWESOME
-        </section>
-        <Codeblock :code="example3" />
-        <section class="example3 container">
-            CCS IS AWESOME
-        </section>
-    </div>
+    <h1>Desbordamiento</h1>
+    <Codeblock :code="example1" />
+    <section class="example1 container">
+        CCS IS AWESOME
+    </section>
+    <Note title="Nota">
+        El valor por defecto de la propiedad <code>overflow</code> es <code>visible</code>.
+        Si el contenido es más grande que el contenedor, se mostrará fuera de él.
+    </Note>
+    <Codeblock :code="example2" />
+    <section class="example2 container">
+        CCS IS AWESOME
+    </section>
+    <Codeblock :code="example3" />
+    <section class="example3 container">
+        CCS IS AWESOME
+    </section>
+    <Codeblock :code="example4" />
+    <section class="example4 container">
+        CCS IS AWESOME
+    </section>
 </template>
 
 <style scoped>
@@ -84,5 +96,16 @@ const example3 = `.container {
     border: 1px solid white;
     color: black;
     overflow: auto;
+}
+
+.example4.container {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    font-size: 30px;
+    border: 1px solid white;
+    color: black;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 </style>
