@@ -41,25 +41,23 @@ const example2 = `.content-box {
 </script>
 
 <template>
-    <div>
-        <h1>Box</h1>
-        <Codeblock :code="example1" />
-        <article class="example1">
-            <span>Este es un span</span>
-            <div>Este es un div</div>
-        </article>
-        <Note title="Nota">
-            Los estilos inline no tienen propiedad de alto ni ancho.
-        </Note>
-        <Codeblock :code="example2" />
-        <article class="example2">
-            <div class="content-box">content-box</div>
-            <div class="border-box">border-box</div>
-        </article>
-        <Note title="Nota">
-            El box-sizing: border-box hace que el alto y ancho incluyan el padding y el borde.
-        </Note>
-    </div>
+    <h1>Box</h1>
+    <Codeblock :code="example1" />
+    <article class="example1">
+        <span>Este es un span</span>
+        <div>Este es un div</div>
+    </article>
+    <Note title="Nota">
+        Los estilos inline no tienen propiedad de alto ni ancho.
+    </Note>
+    <Codeblock :code="example2" />
+    <article class="example2">
+        <div class="content-box">content-box</div>
+        <div class="border-box">border-box</div>
+    </article>
+    <Note title="Nota">
+        El box-sizing: border-box hace que el alto y ancho incluyan el padding y el borde.
+    </Note>
 </template>
 
 <style scoped>
