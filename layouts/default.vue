@@ -1,13 +1,15 @@
 <template>
     <div>
         <header>
-            <NuxtLink to="/">Index</NuxtLink>
+            <div>
+                <div>CCS3 Tutorial</div>
+                <div>
+                    <NuxtLink to="/"><span class="material-symbols-outlined">home</span>Home</NuxtLink>
+                </div>
+            </div>
         </header>
         <main>
             <slot />
         </main>
-        <footer>
-            <NuxtLink to="/">Index</NuxtLink>
-        </footer>
     </div>
 </template>
