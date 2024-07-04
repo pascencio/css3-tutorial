@@ -26,33 +26,31 @@ li:last-child {
 }`
 </script>
 <template>
-    <div>
-        <h1>Selectores</h1>
-        <Codeblock :code="example1" />
-        <article class="example1">
-            <p>Este es un párrafo</p>
-            <span>Este es un span</span><br>
-            <span>Este es otro span</span>
-        </article>
-        <Codeblock :code="example2" />
-        <article class="example2">
-            <p>Este es un párrafo</p>
-            <span>Este es un span</span><br>
-            <span>Este es otro span</span>
-        </article>
-        <Codeblock :code="example3" />
-        <article class="example3">
-            <a href="#">Este es un link</a>
-        </article>
-        <Codeblock :code="example4" />
-        <article class="example4">
-            <ul>
-                <li>Este es un item de lista</li>
-                <li>Este es otro item de lista</li>
-                <li>Este es otro item de lista</li>
-            </ul>
-        </article>
-    </div>
+    <h1>Selectors</h1>
+    <Codeblock :code="example1" />
+    <article class="example1">
+        <p>Este es un párrafo</p>
+        <span>Este es un span</span><br>
+        <span>Este es otro span</span>
+    </article>
+    <Codeblock :code="example2" />
+    <article class="example2">
+        <p>Este es un párrafo</p>
+        <span>Este es un span</span><br>
+        <span>Este es otro span</span>
+    </article>
+    <Codeblock :code="example3" />
+    <article class="example3">
+        <a href="#">Este es un link</a>
+    </article>
+    <Codeblock :code="example4" />
+    <article class="example4">
+        <ul>
+            <li>Este es un item de lista</li>
+            <li>Este es otro item de lista</li>
+            <li>Este es otro item de lista</li>
+        </ul>
+    </article>
 </template>
 
 <style scoped>
@@ -71,12 +69,15 @@ li:last-child {
 .example3>a:active {
     color: blue;
 }
+
 .example4>*>li:first-child {
     color: red;
 }
+
 .example4>*>li:nth-child(2) {
     color: blue;
 }
+
 .example4>*>li:last-child {
     color: green;
 }
