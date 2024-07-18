@@ -24,7 +24,7 @@ const lines = computed(() => props.code.split('\n'))
 <style scoped>
 .container {
     margin: 1rem 0;
-    padding: 1em;
+    padding: 1rem;
     display: flex;
     flex-direction: row;
     background-color: #2d4b67;
@@ -38,7 +38,7 @@ ul {
 }
 
 .lines li {
-    padding: 0 1em;
+    padding: 0 1rem;
     font-family: "Source Code Pro", monospace;
     color: #a0a0a0;
     background-color: #2d4b67;
