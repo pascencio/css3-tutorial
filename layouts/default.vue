@@ -2,9 +2,17 @@
     <div>
         <header>
             <div>
-                <div>CCS3 Tutorial</div>
                 <div>
-                    <NuxtLink to="/"><span class="material-symbols-outlined">home</span>Home</NuxtLink>
+                    <menu>
+                        <nav>CCS3 Tutorial</nav>
+                    </menu>
+                </div>
+                <div>
+                    <menu>
+                        <nav>
+                            <NuxtLink to="/"><span class="material-symbols-outlined">home</span>Home</NuxtLink>
+                        </nav>
+                    </menu>
                 </div>
             </div>
         </header>

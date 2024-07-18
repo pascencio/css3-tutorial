@@ -32,23 +32,19 @@ a:hover {
     color: #fff;
 }
 
-header,
-footer {
+header {
+    top: 0;
     font-size: 1.5rem;
-    height: 2rem;
-    padding: 1rem 1rem;
     position: sticky;
+    padding: 0 1rem 0 1rem;
     background-color: #002B36;
     box-shadow: #002B36 0px 0px 20px 0px;
     z-index: 1000;
+    margin: 0 0 1rem 0;
 }
 
 header .material-symbols-outlined {
     font-size: 19px;
-}
-
-header {
-    top: 0;
 }
 
 header>div {
@@ -56,20 +52,8 @@ header>div {
     justify-content: space-between;
 }
 
-footer {
-    bottom: 0;
-}
-
 nav {
     font-size: 1.5rem;
-}
-
-header {
-    margin: 0 0 1rem 0;
-}
-
-footer {
-    margin: 1rem 0 0 0;
 }
 
 code {
