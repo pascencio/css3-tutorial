@@ -45,6 +45,22 @@ ul {
     cursor: pointer;
 }
 
+.code li:hover,.code li:nth-child(odd):hover {
+    background-color: #40566b;
+}
+
+.code li:nth-child(odd) {
+    background-color: #1f405e;
+}
+
+.code li {
+    cursor: pointer;
+}
+
+.code {
+    width: 100%;
+}
+
 .code pre {
     font-family: "Source Code Pro", monospace;
     color: white;
