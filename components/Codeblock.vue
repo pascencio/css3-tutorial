@@ -27,7 +27,7 @@ const lines = computed(() => props.code.split('\n'))
     padding: 1rem;
     display: flex;
     flex-direction: row;
-    background-color: #2d4b67;
+    background-color: #073642;
     overflow: auto;
 }
 
@@ -41,15 +41,11 @@ ul {
     padding: 0 1rem;
     font-family: "Source Code Pro", monospace;
     color: #a0a0a0;
-    background-color: #2d4b67;
+    background-color: #073642;
     cursor: pointer;
 }
 
-.code li:hover,.code li:nth-child(odd):hover {
-    background-color: #40566b;
-}
-
-.code li:nth-child(odd) {
+.code li:hover {
     background-color: #1f405e;
 }
 
@@ -63,7 +59,7 @@ ul {
 
 .code pre {
     font-family: "Source Code Pro", monospace;
-    color: white;
+    color: #859900;
     margin: 0;
     padding: 0;
 }
