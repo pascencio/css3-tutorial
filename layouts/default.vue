@@ -4,7 +4,7 @@
             <div>
                 <div>
                     <menu>
-                        <nav>CCS3 Tutorial</nav>
+                        <nav>CSS 3 Tutorial</nav>
                     </menu>
                 </div>
                 <div>
