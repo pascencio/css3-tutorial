@@ -668,6 +668,7 @@ footer {
     color: black;
     margin: 0;
     box-shadow: none;
+    z-index: auto;
 }
 
 .example11.container>nav {
