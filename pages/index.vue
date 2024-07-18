@@ -20,6 +20,9 @@
             <nav>
                 <NuxtLink to="/flex">Flex</NuxtLink>
             </nav>
+            <nav>
+                <NuxtLink to="/grid">Grid</NuxtLink>
+            </nav>
         </menu>
     </div>
 </template>
