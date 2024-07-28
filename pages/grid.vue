@@ -258,7 +258,64 @@ footer {
     color: black;
 }`;
 
+const example12 = `div {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+    color: black;
+}
 
+.container {
+    display: grid;
+    background-color: lightsalmon;
+    border: 1px solid #ccc;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 50px;
+    gap: 4px;
+    height: 300px;
+    justify-items: center; # stretch por defecto
+}`
+
+const example13 = `div {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+    color: black;
+}
+
+.container {
+    display: grid;
+    background-color: lightsalmon;
+    border: 1px solid #ccc;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 50px;
+    gap: 4px;
+    height: 300px;
+    align-items: start;
+}`;
+
+const example14 = `div {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+    color: black;
+}
+
+.container {
+    display: grid;
+    background-color: lightsalmon;
+    border: 1px solid #ccc;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 50px;
+    gap: 4px;
+    width: 300px;
+    height: 300px;
+    justify-content: center;
+    align-content: center;
+}`;
 
 
 </script>
@@ -455,6 +512,53 @@ footer {
             definida en <code>grid-template-areas</code>.</p>
         <p>Si pones un <code>"."</code> en vez del nombre de un área, el elemento no se mostrará.
         </p>
+    </Note>
+    <Codeblock :code="example12" />
+    <section class="example12 container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </section>
+    <Note title="Nota">
+        <p>La propiedad <code>justify-items</code> alinea de forma horizontal los items dentro de la grilla según el
+            valor que tenga, por defecto se usa el valor <code>stretch</code></p>
+    </Note>
+    <Codeblock :code="example13" />
+    <section class="example13 container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </section>
+    <Note title="Nota">
+        <p>La propiedad <code>align-items</code> alinea de forma vertical los items dentro de la grilla según el valor
+            que tenga, por defecto se usa el valor <code>stretch</code></p>
+    </Note>
+    <Codeblock :code="example14" />
+    <section class="example14 container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </section>
+    <Note title="Nota">
+        <p>Las propiedades <code>justify-content</code> y <code>align-content</code> alinean el contenido dentro de la
+            grilla según el valor que tenga, por defecto se usa el valor <code>stretch</code></p>
+        <p>En el caso de este ejemplo, el mismo efecto se podría haber logrado con la propiedad
+            <code>place-content</code> con el valor <code>center</code></p>
     </Note>
 </template>
 <style scoped>
@@ -705,5 +809,64 @@ footer {
     padding: 8px;
     text-align: center;
     color: black;
+}
+
+.example12.container>div {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+    color: black;
+}
+
+.example12.container {
+    display: grid;
+    background-color: lightsalmon;
+    border: 1px solid #ccc;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 50px;
+    gap: 4px;
+    height: 160px;
+    justify-items: center;
+}
+
+.example13.container>div {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+    color: black;
+}
+
+.example13.container {
+    display: grid;
+    background-color: lightsalmon;
+    border: 1px solid #ccc;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 50px;
+    gap: 4px;
+    height: 160px;
+    align-items: start;
+}
+
+.example14.container>div {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+    color: black;
+}
+
+.example14.container {
+    display: grid;
+    background-color: lightsalmon;
+    border: 1px solid #ccc;
+    grid-template-columns: repeat(3, 50px);
+    grid-auto-rows: 50px;
+    gap: 4px;
+    width: 500px;
+    height: 300px;
+    justify-content: center;
+    align-content: center;
 }
 </style>
