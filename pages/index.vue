@@ -23,6 +23,12 @@
             <nav>
                 <NuxtLink to="/grid">Grid</NuxtLink>
             </nav>
+            <nav>
+                <NuxtLink to="/transition">Transition</NuxtLink>
+            </nav>
+            <nav>
+                <NuxtLink to="/animation">Animation</NuxtLink>
+            </nav>
         </menu>
     </div>
 </template>
