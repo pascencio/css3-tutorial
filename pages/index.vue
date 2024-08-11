@@ -26,9 +26,9 @@
             <nav>
                 <NuxtLink to="/transition">Transition</NuxtLink>
             </nav>
-            <!-- <nav>
+            <nav>
                 <NuxtLink to="/animation">Animation</NuxtLink>
-            </nav> -->
+            </nav>
         </menu>
     </div>
 </template>
